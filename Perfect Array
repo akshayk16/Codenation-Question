@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Problem
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Your friend is not able to solve a question in the recent HackerRank League Contest and wants you to help them out. 
+You are given two arrays consisting of integers, denoted as firstArray and secondArray respectively. 
+A Perfect Array is defined as an array that can be converted to secondArray by removing some integers, 
+and the removal of integers maintains its relative order.
+
+For example, let firstArray = [3,1,4,2,5] and secondArray = [3,4,5]. Here, firstArray is a Perfect Array because we
+can remove the integers 1 and 2 from it so that firstArray is equal to secondArray.
+
+As another example, let firstArray = [3,1,4,2,5] and secondArray = [4,5,7]. Here, firstArray is not a Perfect Array as
+we cannot make it equal to secondArray by removing integers. Because firstArray cannot always be a Perfect Array, 
+what is the minimum number of integers you need to insert anywhere into firstArray so that it can become a Perfect Array?
+
+For example:
+firstArray = [4, 5, 1, 7, 8]
+secondArray = [4, 8, 7]
+
+Here, firstArray is not a Perfect Array because removing integers 5 and 1 makes [4, 7, 8], which is not equal to
+secondArray.
+Adding 7 at the end of firstArray makes it [4, 5, 1, 7, 8, 7].
+
+Now, removing the second, third, and fourth integers (5, 1, and 7) gives us [4, 8, 7], which is equal to
+secondArray.
+Hence, the minimum number of insertions to be made in firstArray is 1.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Function Description
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Complete the function getMininsertions in the editor below.
+The function must return an integer denoting the number of integers to be added to firstArray so that it
+becomes a Perfect Array.
+getMininsertions has the following parameters:
+
+firstArray: an array of integers
+secondArray: an array of integers
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Constraints
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+° 1<= size of firstArray <=10^5
+
+° 1<= size of secondArray <=10^5
+
+° 1<= firstArray[i] <=10^9
+
+° 1=<secondArrayfi] <=10^9
+
+° secondArray consists of distinct elements
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Code: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
