@@ -47,5 +47,40 @@ Constraints
 
 ° secondArray consists of distinct elements
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample cases 0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample Input For Custom Testing
+2
+3
+2
+1
+2
+Sample Output
+0
+
+Explanation
+Here, firstArray = [3, 2] and secondArray = [2].
+Removing 3 from firstArray makes it equal to secondArray. Hence, firstArray is already Perfect Array, and as no insertions were needed, the answer is 0.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample Case 1
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample Input For Custom Testing
+3
+4
+3
+2
+3
+7
+3
+il
+Sample Output
+2
+Explanation
+Here, firstArray = [4, 3, 2] and secondArray = [7, 3, 11].
+firstArray cannot directly be converted to secondArray, hence it is not a Perfect Array.
+By inserting integers 7 and 11 in firstArray, making it [7. 4, 3, 2, 11], firstArray becomes a Perfect Array. 
+This is because removing integers 4 and 2 makes firstArray equal to secondArray.
+Hence, the number of insertions needed in firstArray is 2.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Code: 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
