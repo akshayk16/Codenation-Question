@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Problem
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Given a string, your task is to return the largest string, based on dictionary order, that can be obtained by
+erasing a certain number of characters from that string. 
+
+For two strings, x and y, each consisting of m characters, x is larger than y, based on dictionary order, when the
+first /-1 letters in x and y are equal, where 1 </ < m, but the jt? letter in x is larger than the jth letter in y. For
+example, "caa" is larger than "baa", and "abza" is larger than "abqa".
+
+Consider the following example. Let the string, s, be "baca". The number of characters to be erased, k, is 1.
+There are 4 possible ways of deleting exactly one character from that
+string: "aca","bca","baa", and "bac". Among these strings, "bca" is the largest in dictionary order. Thus, "bca" is
+the desired answer.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Function Description
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Complete the function stringReduction in the editor below. The function must return the largest string, based
+on dictionary order, that can be obtained by erasing exactly k characters from the input string.
+
+stringReduction has the following parameter‘(s):
+k: an integer
+s: a string of length n
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample Input For Custom Testing
+1
+zyxedcba
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample Output
+zyxedcb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Explanation
+The input string, s, is "zyxedcba", and the number of characters to erase, k, is 1.
+The possible ways of erasing exactly 7 character are:
+"yxedcba",
+"zxedcba",
+"zyedcba",
+"zyxdcba",
+"zyxecba",
+"zyxedba",
+"zyxedca",
+"zyxedcb"
+The largest string among them, based on dictionary order, is "zyxedcb", so that is the answer.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Code: C++
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
